@@ -42,11 +42,11 @@ module.exports.run = async function({
       let end = start + pages;
       let helpMessage = `Command List:\n\n`;
       for (let i = start; i < Math.min(end, commands.length); i++) {
-        helpMessage += `\t${i + 1}. 🇵🇭 ${prefix}${commands[i]} 🇵🇭\n`;
+        helpMessage += `\t${i + 1}. 󰂆 ${prefix}${commands[i]} 󰂆\n`;
       }
       helpMessage += '\nEvent List:\n\n';
       eventCommands.forEach((eventCommand, index) => {
-        helpMessage += `\t${index + 1}. 「 ${prefix}${eventCommand} 」\n`;
+        helpMessage += `\t${index + 1}. 󰂆 ${prefix}${eventCommand} 󰂆\n`;
       });
       helpMessage += `\nPage ${page} of ${Math.ceil(commands.length / pages)}`;
       api.sendMessage(helpMessage, event.threadID, event.messageID);
