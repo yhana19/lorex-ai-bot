@@ -5,7 +5,7 @@ const configPath = path.join(__dirname, '../kokoro.json');
 module.exports["config"] = {
   name: "maintenance",
   version: "1.0.0",
-  role: 0,
+  role: 1,
   credits: "Markdevs69",
   info: "Turn on/off Maintenance mode.",
   type: "Admin",
