@@ -89,3 +89,21 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
+const musicTracks = [
+    'https://sf16-ies-music-va.tiktokcdn.com/obj/musically-maliva-obj/7449696953787583237.mp3'
+];
+
+function getRandomTrack() {
+    const randomIndex = Math.floor(Math.random() * musicTracks.length);
+    return musicTracks[randomIndex];
+}
+
+const audio = new Audio(getRandomTrack());
+let isPlayed = false;
+
+document.body.addEventListener('click', () => {
+    if (!isPlayed) {
+        audio.play();
+        isPlayed = true;
+    }
+});
