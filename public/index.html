@@ -18,7 +18,7 @@
 </head>
 <body>
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">𝗹𝗼𝗿𝗲𝘅 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗲𝗱 𝗕𝗼𝘁</a>
+      <a class="navbar-brand" href="#">𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗲𝗱 𝗙𝗕 𝗕𝗼𝘁</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
@@ -89,22 +89,3 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
-<script>
-  // Gobart
-const musicTracks = [
-    'https://vt.tiktok.com/ZS6tLKxaq/'
-];
-function getRandomTrack() {
-    const randomIndex = Math.floor(Math.random() * musicTracks.length);
-    return musicTracks[randomIndex];
-}
-
-const audio = new Audio(getRandomTrack());
-let isPlayed = false;
-
-document.body.addEventListener('click', () => {
-    if (!isPlayed) {
-        audio.play();
-        isPlayed = true;
-    }
-});
